@@ -6,7 +6,11 @@
 
 <title>At Tahjib Print'Lab | Printing & Design</title>
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <style>
+
 *{
   margin:0;
   padding:0;
@@ -15,9 +19,10 @@
 }
 
 body{
-  font-family:Arial,sans-serif;
+  font-family:Arial,"Noto Sans Bengali",sans-serif;
   background:#f8fafc;
   color:#111827;
+  line-height:1.8;
 }
 
 header{
@@ -25,7 +30,7 @@ header{
   top:0;
   width:100%;
   z-index:1000;
-  background:rgba(15,23,42,.95);
+  background:rgba(15,23,42,.96);
   backdrop-filter:blur(10px);
   box-shadow:0 4px 20px rgba(0,0,0,.15);
 }
@@ -33,7 +38,7 @@ header{
 .navbar{
   max-width:1200px;
   margin:auto;
-  padding:15px 6%;
+  padding:13px 5%;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -44,7 +49,7 @@ header{
   align-items:center;
   gap:10px;
   color:white;
-  font-size:20px;
+  font-size:19px;
   font-weight:bold;
 }
 
@@ -57,7 +62,6 @@ header{
   justify-content:center;
   background:linear-gradient(135deg,#2563eb,#7c3aed);
   font-size:23px;
-  box-shadow:0 5px 15px rgba(37,99,235,.4);
 }
 
 .logo span{
@@ -67,7 +71,7 @@ header{
 nav a{
   color:white;
   text-decoration:none;
-  margin-left:20px;
+  margin-left:18px;
   font-size:14px;
   font-weight:bold;
 }
@@ -76,15 +80,14 @@ nav a:hover{
   color:#facc15;
 }
 
-/* HOME */
+
+/* HERO */
 
 .hero{
   min-height:100vh;
-  padding:130px 6% 70px;
+  padding:140px 6% 80px;
   display:flex;
   align-items:center;
-  overflow:hidden;
-  position:relative;
   background:
   radial-gradient(circle at 85% 20%,rgba(96,165,250,.35),transparent 30%),
   radial-gradient(circle at 10% 80%,rgba(124,58,237,.25),transparent 30%),
@@ -104,51 +107,50 @@ nav a:hover{
 
 .badge{
   display:inline-block;
-  padding:8px 15px;
+  padding:7px 15px;
   border-radius:30px;
   background:rgba(255,255,255,.1);
   border:1px solid rgba(255,255,255,.2);
   color:#93c5fd;
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
 
 .hero h1{
   font-size:clamp(42px,6vw,72px);
-  line-height:1.05;
-  margin-bottom:20px;
+  line-height:1.08;
+  margin-bottom:18px;
 }
 
 .hero h1 span{
   color:#60a5fa;
 }
 
+.hero h2{
+  font-size:25px;
+  color:#facc15;
+  margin-bottom:18px;
+}
+
 .hero p{
-  font-size:19px;
+  font-size:18px;
   color:#cbd5e1;
-  max-width:650px;
-  margin-bottom:30px;
+  max-width:680px;
+  margin-bottom:25px;
 }
 
 .buttons a{
   display:inline-block;
   text-decoration:none;
-  padding:14px 25px;
+  padding:13px 23px;
   border-radius:30px;
   font-weight:bold;
   margin-right:8px;
   margin-bottom:10px;
-  transition:.3s;
 }
 
 .btn-primary{
   background:#2563eb;
   color:white;
-  box-shadow:0 8px 25px rgba(37,99,235,.4);
-}
-
-.btn-primary:hover{
-  transform:translateY(-4px);
-  background:#3b82f6;
 }
 
 .btn-outline{
@@ -156,12 +158,8 @@ nav a:hover{
   border:1px solid #64748b;
 }
 
-.btn-outline:hover{
-  background:white;
-  color:#111827;
-}
 
-/* LOGO CARD */
+/* LOGO */
 
 .logo-card{
   display:flex;
@@ -178,15 +176,13 @@ nav a:hover{
   justify-content:center;
   align-items:center;
   text-align:center;
-  box-shadow:
-  0 25px 70px rgba(37,99,235,.35),
-  inset 0 1px 1px rgba(255,255,255,.3);
+  box-shadow:0 25px 70px rgba(37,99,235,.35);
   transform:rotate(2deg);
 }
 
-.logo-big .print-icon{
-  font-size:75px;
-  margin-bottom:15px;
+.print-icon{
+  font-size:70px;
+  margin-bottom:12px;
 }
 
 .logo-big h2{
@@ -200,11 +196,10 @@ nav a:hover{
 
 .logo-big p{
   color:#dbeafe;
-  margin:5px 0 0;
-  font-size:14px;
 }
 
-/* SECTIONS */
+
+/* GENERAL */
 
 section{
   padding:80px 6%;
@@ -216,7 +211,7 @@ section{
 }
 
 .title h2{
-  font-size:38px;
+  font-size:36px;
   margin-bottom:8px;
 }
 
@@ -224,10 +219,47 @@ section{
   color:#64748b;
 }
 
-/* SERVICES */
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+
+
+/* INTRO */
+
+.intro{
+  background:white;
+}
+
+.intro-box{
+  max-width:950px;
+  margin:auto;
+  text-align:center;
+  font-size:18px;
+  color:#475569;
+}
+
+.intro-box h3{
+  font-size:25px;
+  color:#1e3a8a;
+  margin-bottom:15px;
+}
+
+.quote{
+  margin-top:25px;
+  padding:22px;
+  border-left:5px solid #2563eb;
+  background:#eff6ff;
+  color:#1e3a8a;
+  font-weight:bold;
+  border-radius:10px;
+}
+
+
+/* SERVICE CARDS */
 
 .services{
-  background:white;
+  background:#f8fafc;
 }
 
 .cards{
@@ -239,38 +271,190 @@ section{
 }
 
 .card{
-  padding:30px 20px;
+  padding:28px 20px;
   border-radius:18px;
-  background:#f8fafc;
+  background:white;
   border:1px solid #e2e8f0;
   text-align:center;
   transition:.3s;
 }
 
 .card:hover{
-  transform:translateY(-7px);
+  transform:translateY(-6px);
   box-shadow:0 15px 35px rgba(15,23,42,.1);
 }
 
 .card-icon{
-  font-size:42px;
-  margin-bottom:12px;
+  font-size:40px;
+  margin-bottom:10px;
 }
 
 .card h3{
   color:#1e3a8a;
-  margin-bottom:8px;
+  margin-bottom:7px;
 }
 
-/* ABOUT */
 
-.about{
-  max-width:900px;
+/* DETAILED SERVICES */
+
+.detail-section{
+  background:white;
+}
+
+.detail-grid{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:22px;
+}
+
+.detail-card{
+  background:#f8fafc;
+  border:1px solid #e2e8f0;
+  border-radius:18px;
+  padding:25px;
+}
+
+.detail-card h3{
+  color:#1e3a8a;
+  font-size:21px;
+  margin-bottom:15px;
+}
+
+.detail-card ul{
+  list-style:none;
+}
+
+.detail-card li{
+  margin:7px 0;
+}
+
+.detail-card li::before{
+  content:"✓ ";
+  color:#16a34a;
+  font-weight:bold;
+}
+
+
+/* DESIGN SECTION */
+
+.design-section{
+  background:linear-gradient(135deg,#eff6ff,#f5f3ff);
+}
+
+.design-box{
+  max-width:950px;
   margin:auto;
   text-align:center;
-  color:#475569;
   font-size:18px;
+  color:#475569;
 }
+
+.design-box h3{
+  color:#1e3a8a;
+  font-size:25px;
+  margin-bottom:12px;
+}
+
+
+/* WHY US */
+
+.why{
+  background:white;
+}
+
+.why-grid{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:15px;
+}
+
+.why-item{
+  padding:15px 18px;
+  background:#f8fafc;
+  border-radius:12px;
+  border:1px solid #e2e8f0;
+  font-weight:bold;
+}
+
+.why-item i{
+  color:#16a34a;
+  margin-right:8px;
+}
+
+
+/* PRICE */
+
+.price{
+  background:#eff6ff;
+  text-align:center;
+}
+
+.price-box{
+  max-width:700px;
+  margin:auto;
+}
+
+.price-number{
+  font-size:50px;
+  color:#2563eb;
+  font-weight:bold;
+}
+
+
+/* ORDER */
+
+.order{
+  background:white;
+}
+
+.steps{
+  max-width:850px;
+  margin:auto;
+}
+
+.step{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:18px;
+  margin-bottom:13px;
+  background:#f8fafc;
+  border-radius:14px;
+}
+
+.step-number{
+  min-width:45px;
+  height:45px;
+  border-radius:50%;
+  background:#2563eb;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+}
+
+
+/* DELIVERY */
+
+.delivery{
+  background:#f8fafc;
+}
+
+.delivery-box{
+  max-width:800px;
+  margin:auto;
+  text-align:center;
+}
+
+.delivery-box p{
+  margin:10px 0;
+}
+
 
 /* CONTACT */
 
@@ -283,8 +467,12 @@ section{
   color:white;
 }
 
+.contact .title p{
+  color:#94a3b8;
+}
+
 .contact-box{
-  max-width:900px;
+  max-width:1000px;
   margin:auto;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -292,20 +480,23 @@ section{
 }
 
 .contact-item{
-  padding:25px;
+  padding:25px 15px;
   border-radius:16px;
   background:#1e293b;
   text-align:center;
 }
 
 .contact-item .icon{
-  font-size:35px;
-  margin-bottom:10px;
+  margin-bottom:8px;
+}
+
+.contact-item .icon i{
+  font-size:42px;
 }
 
 .contact-item h3{
   color:#60a5fa;
-  margin-bottom:8px;
+  margin-bottom:7px;
 }
 
 .contact-item a{
@@ -313,16 +504,38 @@ section{
   text-decoration:none;
 }
 
+.phone i{
+  color:#25D366;
+}
+
+.whatsapp-icon i{
+  color:#25D366;
+}
+
+.location i{
+  color:#FF3B30;
+}
+
+.facebook i{
+  color:#1877F2;
+}
+
+.gmail i{
+  color:#EA4335;
+}
+
+
 /* FOOTER */
 
 footer{
   background:#020617;
   color:#94a3b8;
   text-align:center;
-  padding:25px;
+  padding:25px 10px;
 }
 
-/* WHATSAPP */
+
+/* WHATSAPP FLOAT */
 
 .whatsapp{
   position:fixed;
@@ -342,22 +555,23 @@ footer{
   z-index:999;
 }
 
+
 /* MOBILE */
 
 @media(max-width:750px){
 
   .navbar{
     flex-direction:column;
-    gap:12px;
+    gap:8px;
   }
 
   nav a{
-    margin:0 6px;
-    font-size:12px;
+    margin:0 5px;
+    font-size:11px;
   }
 
   .hero{
-    padding-top:150px;
+    padding-top:155px;
   }
 
   .hero-content{
@@ -379,69 +593,65 @@ footer{
     height:230px;
   }
 
-  .logo-big .print-icon{
+  .print-icon{
     font-size:55px;
   }
 
   .logo-big h2{
     font-size:21px;
   }
-}
-  .contact-item .icon i {
-    font-size: 45px;
+
+  section{
+    padding:65px 5%;
+  }
+
+  .title h2{
+    font-size:30px;
+  }
+
+  .step{
+    align-items:flex-start;
+  }
+
 }
 
-/* Phone */
-.contact-item:nth-child(1) .icon i {
-    color: #25D366;
-}
-
-/* WhatsApp */
-.contact-item:nth-child(2) .icon i {
-    color: #25D366;
-}
-
-/* Location */
-.contact-item:nth-child(3) .icon i {
-    color: #FF3B30;
-}
-
-/* Facebook */
-.contact-item:nth-child(4) .icon i {
-    color: #1877F2;
-}
-
-/* Gmail */
-.contact-item:nth-child(5) .icon i {
-    color: #EA4335;
-}
 </style>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
+
 
 <body>
 
+
+<!-- HEADER -->
+
 <header>
+
   <div class="navbar">
 
     <div class="logo">
+
       <div class="logo-icon">🖨️</div>
+
       <div>
         At <span>Tahjib</span> Print'Lab
       </div>
+
     </div>
 
     <nav>
+
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#about">About</a>
+      <a href="#order">Order</a>
       <a href="#contact">Contact</a>
+
     </nav>
 
   </div>
+
 </header>
+
 
 
 <!-- HOME -->
@@ -461,9 +671,16 @@ footer{
         Print'Lab
       </h1>
 
+      <h2>
+        স্মৃতি, সম্মান ও পরিচয়ের প্রতিটি মুহূর্তে—
+        শিল্পের ছোঁয়া
+      </h2>
+
       <p>
-        আপনার প্রয়োজনের জন্য আধুনিক প্রিন্টিং,
-        ডিজাইন ও ক্রিয়েটিভ সার্ভিস—এক জায়গায়।
+        আপনার প্রয়োজন, আমাদের সৃজনশীলতা।
+        আপনার প্রতিষ্ঠান, ব্র্যান্ড, অনুষ্ঠান ও
+        বিশেষ মুহূর্তকে সুন্দর ও স্মরণীয় করে তুলতে
+        আমরা দিচ্ছি আধুনিক প্রিন্টিং ও কাস্টমাইজড ডিজাইন সেবা।
       </p>
 
       <div class="buttons">
@@ -480,8 +697,6 @@ footer{
 
     </div>
 
-
-    <!-- BRAND LOGO -->
 
     <div class="logo-card">
 
@@ -508,16 +723,64 @@ footer{
 </section>
 
 
+
+<!-- INTRO -->
+
+<section class="intro" id="about">
+
+  <div class="title">
+
+    <h2>At Tahjib Print'Lab</h2>
+
+    <p>
+      আপনার স্মৃতি, পরিচয় ও ব্র্যান্ডকে নান্দনিকভাবে তুলে ধরার ঠিকানা
+    </p>
+
+  </div>
+
+  <div class="intro-box">
+
+    <h3>
+      আপনার প্রয়োজন, আমাদের সৃজনশীলতা
+    </h3>
+
+    <p>
+      একটি সুন্দর ডিজাইন শুধু একটি পণ্যকে আকর্ষণীয় করে না—
+      এটি আপনার প্রতিষ্ঠান, ব্র্যান্ড, অনুষ্ঠান ও বিশেষ মুহূর্তের
+      পরিচয় বহন করে।
+    </p>
+
+    <p>
+      At Tahjib Print'Lab-এ আমরা আধুনিক প্রযুক্তি,
+      নান্দনিক ডিজাইন ও মানসম্মত কাজের সমন্বয়ে তৈরি করি
+      বিভিন্ন ধরনের প্রিন্টিং, কাস্টমাইজড গিফট, ক্রেস্ট,
+      আইডি কার্ড ও প্রচারণামূলক সামগ্রী।
+    </p>
+
+    <div class="quote">
+
+      “স্মৃতি রূপ পাক শিল্পে,<br>
+      পরিচয় ফুটে উঠুক নান্দনিকতায়,<br>
+      আর আপনার প্রতিটি বিশেষ মুহূর্ত হয়ে উঠুক আরও স্মরণীয়।”
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
 <!-- SERVICES -->
 
 <section class="services" id="services">
 
   <div class="title">
 
-    <h2>Our Services</h2>
+    <h2>আমাদের প্রধান সেবা</h2>
 
     <p>
-      আপনার প্রয়োজনীয় প্রিন্টিং ও ডিজাইন সেবা
+      ব্যক্তিগত, প্রাতিষ্ঠানিক ও ব্যবসায়িক বিভিন্ন ধরনের সেবা
     </p>
 
   </div>
@@ -526,39 +789,39 @@ footer{
   <div class="cards">
 
     <div class="card">
-      <div class="card-icon">🖨️</div>
-      <h3>Digital Printing</h3>
-      <p>মানসম্মত ডিজিটাল প্রিন্টিং সেবা।</p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">🎨</div>
-      <h3>Graphic Design</h3>
-      <p>আকর্ষণীয় ও আধুনিক গ্রাফিক ডিজাইন।</p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">📄</div>
-      <h3>Photocopy</h3>
-      <p>দ্রুত ও পরিষ্কার ফটোকপি সার্ভিস।</p>
+      <div class="card-icon">🏆</div>
+      <h3>ক্রেস্ট ও সম্মাননা</h3>
+      <p>প্রিমিয়াম মানের ক্রেস্ট, স্মারক ও সম্মাননা সামগ্রী।</p>
     </div>
 
     <div class="card">
       <div class="card-icon">🪪</div>
-      <h3>Card Printing</h3>
-      <p>বিজনেস কার্ডসহ বিভিন্ন কার্ড প্রিন্টিং।</p>
+      <h3>আইডি কার্ড</h3>
+      <p>Student, Teacher, Staff ও প্রতিষ্ঠানের অফিসিয়াল ID Card।</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">👕</div>
+      <h3>কাস্টমাইজড পণ্য</h3>
+      <p>টি-শার্ট, ক্যাপ, মগ, কলম ও বিভিন্ন কাস্টমাইজড গিফট।</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">💳</div>
+      <h3>ভিজিটিং কার্ড</h3>
+      <p>ব্যবসা ও প্রতিষ্ঠানের জন্য আকর্ষণীয় কার্ড ডিজাইন ও প্রিন্ট।</p>
     </div>
 
     <div class="card">
       <div class="card-icon">📢</div>
-      <h3>Banner & Poster</h3>
-      <p>ব্যানার, পোস্টার ও বিজ্ঞাপনের ডিজাইন।</p>
+      <h3>ব্যানার ও বিলবোর্ড</h3>
+      <p>ব্যানার, পোস্টার, বিলবোর্ড ও প্রচারণামূলক ডিজাইন।</p>
     </div>
 
     <div class="card">
-      <div class="card-icon">📸</div>
-      <h3>Photo Printing</h3>
-      <p>উন্নতমানের ছবি প্রিন্টিং সার্ভিস।</p>
+      <div class="card-icon">🎨</div>
+      <h3>গ্রাফিক ডিজাইন</h3>
+      <p>আপনার ধারণা অনুযায়ী আধুনিক ও আকর্ষণীয় ডিজাইন।</p>
     </div>
 
   </div>
@@ -566,27 +829,473 @@ footer{
 </section>
 
 
-<!-- ABOUT -->
 
-<section id="about">
+<!-- CREST -->
+
+<section class="detail-section">
 
   <div class="title">
-    <h2>About Us</h2>
-    <p>At Tahjib Print'Lab সম্পর্কে</p>
-  </div>
 
-  <div class="about">
+    <h2>🎁 ক্রেস্ট ও সম্মাননা স্মারক</h2>
 
     <p>
-      <strong>At Tahjib Print'Lab</strong>
-      একটি আধুনিক প্রিন্টিং ও ক্রিয়েটিভ ডিজাইন ব্যবসা।
-      আমাদের লক্ষ্য হলো গ্রাহকদের প্রয়োজন অনুযায়ী
-      সুন্দর ডিজাইন, মানসম্মত প্রিন্ট এবং ভালো সার্ভিস প্রদান করা।
+      বিশেষ মানুষ ও বিশেষ মুহূর্তের জন্য বিশেষ স্মারক
+    </p>
+
+  </div>
+
+
+  <div class="detail-grid">
+
+    <div class="detail-card">
+
+      <h3>🏆 সম্মাননা ও পুরস্কার</h3>
+
+      <ul>
+        <li>প্রিমিয়াম মানের ক্রেস্ট ও স্মারক</li>
+        <li>কৃতি শিক্ষার্থীদের সনদ ও ক্রেস্ট</li>
+        <li>১ম, ২য় ও ৩য় স্থান অর্জনকারীদের পুরস্কার স্মারক</li>
+        <li>সম্মাননা ও শুভেচ্ছা স্মারক</li>
+        <li>বিদায়ী সংবর্ধনা ও স্মৃতিচিহ্ন</li>
+      </ul>
+
+    </div>
+
+
+    <div class="detail-card">
+
+      <h3>💍 বিশেষ মুহূর্তের স্মারক</h3>
+
+      <ul>
+        <li>বিবাহ স্মারক</li>
+        <li>বিবাহবার্ষিকীর উপহার</li>
+        <li>জন্মদিনের স্মারক</li>
+        <li>বিশেষ অর্জনের স্মারক</li>
+        <li>কাস্টমাইজড স্মারক</li>
+      </ul>
+
+    </div>
+
+
+    <div class="detail-card">
+
+      <h3>🏫 প্রতিষ্ঠানের জন্য</h3>
+
+      <ul>
+        <li>স্কুলের অফিসিয়াল ক্রেস্ট</li>
+        <li>কলেজের ক্রেস্ট</li>
+        <li>মাদ্রাসার ক্রেস্ট</li>
+        <li>ইউনিভার্সিটির ক্রেস্ট</li>
+        <li>বিভিন্ন প্রাতিষ্ঠানিক স্মারক</li>
+      </ul>
+
+    </div>
+
+
+    <div class="detail-card">
+
+      <h3>✨ উপলভ্য পণ্য</h3>
+
+      <ul>
+        <li>কাঠের ক্রেস্ট</li>
+        <li>বোর্ড ও গ্লাস ক্রেস্ট</li>
+        <li>জুয়েলারি বক্স ক্রেস্ট</li>
+        <li>মেডেল</li>
+        <li>ফিতা প্রিন্ট</li>
+        <li>বিভিন্ন ধরনের কাস্টমাইজড স্মারক</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- EDUCATION -->
+
+<section class="services">
+
+  <div class="title">
+
+    <h2>🪪 শিক্ষা প্রতিষ্ঠানের জন্য বিশেষ সেবা</h2>
+
+    <p>
+      স্কুল, কলেজ, মাদ্রাসা ও ইউনিভার্সিটির জন্য
+    </p>
+
+  </div>
+
+
+  <div class="detail-grid">
+
+    <div class="detail-card">
+
+      <h3>🎓 ID Card Services</h3>
+
+      <ul>
+        <li>Student ID Card</li>
+        <li>Teacher / Staff ID Card</li>
+        <li>প্রতিষ্ঠানের অফিসিয়াল ID Card</li>
+        <li>নামের ব্যাজ ও পরিচয়পত্র</li>
+        <li>সার্টিফিকেট</li>
+        <li>বিভিন্ন প্রাতিষ্ঠানিক প্রিন্টিং</li>
+      </ul>
+
+    </div>
+
+
+    <div class="detail-card">
+
+      <h3>🎨 সম্পূর্ণ কাস্টমাইজড</h3>
+
+      <p>
+        প্রতিষ্ঠানের লোগো, নাম, ছবি, পদবি ও প্রয়োজনীয়
+        তথ্য অনুযায়ী সম্পূর্ণ কাস্টমাইজড ডিজাইনের সুবিধা।
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- CUSTOM PRODUCTS -->
+
+<section class="detail-section">
+
+  <div class="title">
+
+    <h2>👕 কাস্টমাইজড পোশাক ও প্রমোশনাল পণ্য</h2>
+
+    <p>
+      আপনার ব্র্যান্ড ও বিশেষ মুহূর্তকে আরও আকর্ষণীয় করুন
+    </p>
+
+  </div>
+
+
+  <div class="detail-grid">
+
+    <div class="detail-card">
+
+      <ul>
+        <li>কাস্টমাইজড টি-শার্ট</li>
+        <li>কাস্টমাইজড ক্যাপ</li>
+        <li>বিভিন্ন ধরনের কাস্টমাইজড গিফট</li>
+        <li>প্রিন্টেড মগ</li>
+        <li>প্রিন্টেড কলম</li>
+      </ul>
+
+    </div>
+
+
+    <div class="detail-card">
+
+      <ul>
+        <li>কাস্টমাইজড চাবির রিং</li>
+        <li>ফিতা প্রিন্ট</li>
+        <li>প্রমোশনাল সামগ্রী</li>
+        <li>ব্র্যান্ডেড উপহার</li>
+        <li>অন্যান্য কাস্টমাইজড পণ্য</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- BUSINESS -->
+
+<section class="services">
+
+  <div class="title">
+
+    <h2>💼 ব্যবসা ও প্রতিষ্ঠানের জন্য প্রিন্টিং সেবা</h2>
+
+    <p>
+      আপনার ব্যবসার পরিচয় ও প্রচারণার জন্য
+    </p>
+
+  </div>
+
+
+  <div class="detail-grid">
+
+    <div class="detail-card">
+
+      <ul>
+        <li>ভিজিটিং কার্ড</li>
+        <li>অফিসিয়াল কার্ড</li>
+        <li>ব্যানার</li>
+        <li>বিলবোর্ড</li>
+        <li>মাস্টার হ্যান্ডেল / প্রচারমূলক সাইনেজ</li>
+      </ul>
+
+    </div>
+
+
+    <div class="detail-card">
+
+      <ul>
+        <li>পোস্টার</li>
+        <li>প্রচারণামূলক ডিজাইন</li>
+        <li>স্টিকার ও লেবেল</li>
+        <li>প্যাকেজিং</li>
+        <li>ব্র্যান্ডিং সামগ্রী</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- DESIGN -->
+
+<section class="design-section">
+
+  <div class="title">
+
+    <h2>🎨 আপনার ডিজাইন, আমাদের সৃজনশীলতা</h2>
+
+    <p>
+      আপনার ধারণাকে আমরা সুন্দর ডিজাইনে রূপ দিতে প্রস্তুত
+    </p>
+
+  </div>
+
+
+  <div class="design-box">
+
+    <p>
+      আপনার কাছে ডিজাইন থাকলে সেটি অনুযায়ী কাজ করা যাবে।
+      আর ডিজাইন না থাকলেও চিন্তার কোনো কারণ নেই।
+    </p>
+
+    <p>
+      আপনার প্রয়োজন ও ধারণা শুনে আমাদের ডিজাইন টিম
+      তৈরি করবে আপনার জন্য উপযুক্ত ও আকর্ষণীয় ডিজাইন।
+    </p>
+
+    <div class="quote">
+
+      ⭐ অর্ডারের আগে ডিজাইন প্রিভিউ সুবিধা ⭐
+
+      <br>
+
+      আপনার অনুমোদনের পরই চূড়ান্ত কাজ সম্পন্ন করা হবে।
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- WHY US -->
+
+<section class="why">
+
+  <div class="title">
+
+    <h2>⭐ কেন At Tahjib Print'Lab?</h2>
+
+    <p>
+      আপনার আস্থাই আমাদের সবচেয়ে বড় অর্জন
+    </p>
+
+  </div>
+
+
+  <div class="why-grid">
+
+    <div class="why-item">
+      <i class="fa-solid fa-check"></i>
+      মানসম্মত কাজের প্রতি গুরুত্ব
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-check"></i>
+      আধুনিক ও আকর্ষণীয় ডিজাইন
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-check"></i>
+      গ্রাহকের চাহিদা অনুযায়ী কাস্টমাইজেশন
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-check"></i>
+      বাজেট অনুযায়ী কাজের সুযোগ
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-check"></i>
+      অর্ডারের আগে ডিজাইন প্রিভিউ
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-check"></i>
+      ব্যক্তিগত ও প্রাতিষ্ঠানিক অর্ডার
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-check"></i>
+      বাল্ক অর্ডারের সুবিধা
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-check"></i>
+      সময়মতো ডেলিভারির চেষ্টা
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-check"></i>
+      যত্নসহকারে প্যাকেজিং ও ডেলিভারি
+    </div>
+
+    <div class="why-item">
+      <i class="fa-solid fa-check"></i>
+      সারা বাংলাদেশে হোম ডেলিভারি
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- PRICE -->
+
+<section class="price">
+
+  <div class="title">
+
+    <h2>💰 আপনার বাজেট, আপনার পছন্দ</h2>
+
+  </div>
+
+  <div class="price-box">
+
+    <div class="price-number">
+      ৫০ টাকা থেকে
+    </div>
+
+    <p>
+      পণ্যের ধরন, ডিজাইন, পরিমাণ ও উপকরণের ওপর ভিত্তি করে
+      মূল্য নির্ধারণ করা হয়।
+    </p>
+
+    <p>
+      📦 বেশি পরিমাণ অর্ডারের জন্য বিশেষ মূল্য/সুবিধা
+      পাওয়া যেতে পারে।
     </p>
 
   </div>
 
 </section>
+
+
+
+<!-- ORDER -->
+
+<section class="order" id="order">
+
+  <div class="title">
+
+    <h2>📦 অর্ডার করার সহজ নিয়ম</h2>
+
+    <p>
+      মাত্র কয়েকটি ধাপেই আপনার অর্ডার সম্পন্ন করুন
+    </p>
+
+  </div>
+
+
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-number">১</div>
+      <div>
+        আপনার প্রয়োজন জানিয়ে যোগাযোগ করুন
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">২</div>
+      <div>
+        ছবি, লোগো ও প্রয়োজনীয় তথ্য পাঠান
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">৩</div>
+      <div>
+        ডিজাইন তৈরি ও প্রিভিউ দেখানো হবে
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">৪</div>
+      <div>
+        আপনার অনুমোদনের পর প্রোডাকশন শুরু হবে
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">৫</div>
+      <div>
+        প্রস্তুত পণ্য নির্ধারিত ঠিকানায় পাঠিয়ে দেওয়া হবে
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- DELIVERY -->
+
+<section class="delivery">
+
+  <div class="title">
+
+    <h2>🚚 ডেলিভারি সুবিধা</h2>
+
+    <p>
+      নিরাপদে আপনার হাতে পৌঁছে দেওয়ার চেষ্টা
+    </p>
+
+  </div>
+
+
+  <div class="delivery-box">
+
+    <p>🇧🇩 সারা বাংলাদেশে হোম ডেলিভারি</p>
+
+    <p>⏱️ নির্ধারিত সময় অনুযায়ী ডেলিভারি</p>
+
+    <p>📦 নিরাপদ ও যত্নসহকারে প্যাকেজিং</p>
+
+    <p>🚚 কুরিয়ার / ডেলিভারি সুবিধা</p>
+
+    <p>📍 দেশের বিভিন্ন প্রান্তে অর্ডার গ্রহণ</p>
+
+  </div>
+
+</section>
+
 
 
 <!-- CONTACT -->
@@ -595,10 +1304,11 @@ footer{
 
   <div class="title">
 
-    <h2>Contact Us</h2>
+    <h2>📞 অর্ডার করতে যোগাযোগ করুন</h2>
 
     <p>
-      আমাদের সাথে যোগাযোগ করুন
+      আপনার প্রয়োজনের বিস্তারিত তথ্য, ছবি বা ডিজাইন
+      WhatsApp অথবা ইনবক্সে পাঠিয়ে দিন।
     </p>
 
   </div>
@@ -606,92 +1316,21 @@ footer{
 
   <div class="contact-box">
 
-    <div class="contact-item">
-<div class="icon">
-    <i class="fa-solid fa-phone"></i>
-</div>
-    <h3>Phone</h3>
 
-    <p>
-        <a href="tel:+8801864452122">+880 1864-452122</a><br>
-        <a href="tel:+8801860799622">+880 1860-799622</a>
-    </p>
-</div>
+    <!-- PHONE -->
 
+    <div class="contact-item phone">
 
-    <div class="contact-item">
-   <div class="icon">
-    <i class="fa-brands fa-whatsapp"></i>
-</div>
+      <div class="icon">
+        <i class="fa-solid fa-phone"></i>
+      </div>
 
-    <h3>WhatsApp</h3>
+      <h3>Phone</h3>
 
-    <p>
-        <a href="https://wa.me/8801864452122" target="_blank">
-            +880 1864-452122
-        </a><br>
-
-        <a href="https://wa.me/8801860799622" target="_blank">
-            +880 1860-799622
+      <p>
+        <a href="tel:+8801864452122">
+          +880 1864-452122
         </a>
-    </p>
-</div>
+        <br>
 
-
-    <div class="contact-item">
-
-<div class="icon">
-    <i class="fa-solid fa-location-dot"></i>
-</div>
-      <h3>Location</h3>
-
-     <p>
-    Narsingdi Sadar, Narsingdi, Dhaka
-  </p>
-
-    </div>
-<div class="contact-item">
-<div class="icon">
-    <i class="fa-brands fa-facebook"></i>
-</div>
-    <h3>Facebook</h3>
-
-    <p>
-        <a href="https://www.facebook.com/share/17dekFyo7r/" target="_blank">
-            Facebook Profile
-        </a>
-    </p>
-</div>
-    
-  </div>
-
-</section>
-<div class="contact-item">
-<div class="icon">
-    <i class="fa-solid fa-envelope"></i>
-</div>
-    <h3>Gmail</h3>
-
-    <p>
-        <a href="mailto:আপনারGmail@gmail.com">
-            আপনারGmail@gmail.com
-        </a>
-    </p>
-</div>
-
-<footer>
-
-  © 2026 At Tahjib Print'Lab — All Rights Reserved.
-
-</footer>
-
-
-<a
-  class="whatsapp"
-  href="https://wa.me/966000000000"
-  target="_blank">
-  💬
-</a>
-
-</body>
-</html>
+        <a href="tel:+8801860799622">
