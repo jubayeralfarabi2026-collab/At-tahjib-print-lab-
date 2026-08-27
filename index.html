@@ -164,35 +164,86 @@ nav a:hover{
 }
 
 
-/* LOGO */
+/* PREMIUM HERO LOGO */
 
 .logo-card{
   display:flex;
   justify-content:center;
+  align-items:center;
+  perspective:1000px;
 }
 
 .logo-big{
-  width:300px;
-  height:300px;
-  border-radius:45px;
-  background:linear-gradient(145deg,#2563eb,#7c3aed);
+  position:relative;
+  width:330px;
+  height:330px;
+  border-radius:38px;
+  background:
+    radial-gradient(circle at 50% 28%,rgba(250,204,21,.18),transparent 30%),
+    linear-gradient(145deg,#061126,#0b1d3b 55%,#020817);
+  border:1px solid rgba(250,204,21,.55);
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
-  box-shadow:0 25px 70px rgba(37,99,235,.35);
-  transform:rotate(2deg);
+  overflow:hidden;
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.55),
+    0 0 45px rgba(250,204,21,.12),
+    inset 0 0 35px rgba(250,204,21,.06);
+  transform:rotate(1deg);
+}
+
+.logo-big::before{
+  content:"";
+  position:absolute;
+  width:230px;
+  height:230px;
+  border:1px solid rgba(250,204,21,.20);
+  border-radius:50%;
+  box-shadow:0 0 0 12px rgba(250,204,21,.035);
+}
+
+.logo-big::after{
+  content:"";
+  position:absolute;
+  left:-20%;
+  bottom:18px;
+  width:140%;
+  height:2px;
+  background:linear-gradient(90deg,transparent,#facc15,#fff1a8,#facc15,transparent);
+  box-shadow:0 0 14px rgba(250,204,21,.5);
+  transform:rotate(-8deg);
 }
 
 .print-icon{
-  font-size:70px;
-  margin-bottom:12px;
+  position:relative;
+  z-index:2;
+  width:105px;
+  height:105px;
+  border-radius:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:18px;
+  color:#facc15;
+  font-size:58px;
+  background:linear-gradient(145deg,#111f3d,#050b18);
+  border:1px solid rgba(250,204,21,.65);
+  box-shadow:
+    0 12px 35px rgba(0,0,0,.45),
+    inset 0 0 20px rgba(250,204,21,.08);
 }
 
 .logo-big h2{
-  color:white;
-  font-size:27px;
+  position:relative;
+  z-index:2;
+  color:#f8fafc;
+  font-size:29px;
+  letter-spacing:.5px;
+  margin-bottom:3px;
+  text-shadow:0 3px 12px rgba(0,0,0,.45);
 }
 
 .logo-big h2 span{
@@ -200,7 +251,21 @@ nav a:hover{
 }
 
 .logo-big p{
-  color:#dbeafe;
+  position:relative;
+  z-index:2;
+  color:#f8d66d;
+  font-size:13px;
+  letter-spacing:3px;
+  font-weight:bold;
+}
+
+.logo-mini-text{
+  position:relative;
+  z-index:2;
+  margin-top:7px;
+  color:#cbd5e1;
+  font-size:12px;
+  letter-spacing:1px;
 }
 
 
@@ -594,16 +659,29 @@ footer{
   }
 
   .logo-big{
-    width:230px;
-    height:230px;
+    width:250px;
+    height:250px;
   }
 
   .print-icon{
-    font-size:55px;
+    width:78px;
+    height:78px;
+    border-radius:22px;
+    font-size:42px;
+    margin-bottom:12px;
   }
 
   .logo-big h2{
-    font-size:21px;
+    font-size:22px;
+  }
+
+  .logo-big p{
+    font-size:10px;
+    letter-spacing:2px;
+  }
+
+  .logo-mini-text{
+    font-size:10px;
   }
 
   section{
@@ -710,7 +788,7 @@ footer{
       <div class="logo-big">
 
         <div class="print-icon">
-          🖨️
+          <i class="fa-solid fa-print"></i>
         </div>
 
         <h2>
@@ -720,6 +798,10 @@ footer{
         <p>
           PRINT • DESIGN • CREATE
         </p>
+
+        <div class="logo-mini-text">
+          স্মৃতি • সম্মান • পরিচয়
+        </div>
 
       </div>
 
